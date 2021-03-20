@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="../css/style.css">
+<title>Practice-JS</title>
+<meta name="description" content="ディスクリプション">
+<!-- <link rel="icon" href="../img/favicon.ico"> -->
+</head>
+<body>
+
+
+<header class="header">
+<div class="inner header-inner">
+<div class="header-content">
+
+
+<h1 class="header-logo"><a href="/">Practice-JS</a></h1>
+
+
+<nav class="header-nav">
+	<ul>
+		<li><a href="#">MENU1</a></li>
+		<li><a href="#">MENU2</a></li>
+		<li><a href="#">MENU3</a></li>
+	</ul>
+</nav><!-- /header-nav -->
+
+
+<div class="header-drawer">
+	<div class="drawer">
+		<button class="drawer-icon js-drawer for-drawer" type="button" data-target="for-drawer" aria-controls="drawer-content1" aria-expanded="false">
+			<span class="drawer-bars">
+				<span class="drawer-bar"></span>
+				<span class="drawer-bar"></span>
+				<span class="drawer-bar"></span>
+			</span>
+		</button>
+		<div class="drawer-bg for-drawer"></div>
+		<div id="drawer-content1" class="drawer-content for-drawer" aria-hidden="true">
+			コンテンツ部分
+		</div><!-- /drawer-content -->
+	</div><!-- /drawer -->
+</div><!-- /header-drawer -->
+
+
+</div><!-- /.header-content -->
+</div><!-- /inner -->
+</header><!-- /header -->
+
+
+<div class="mv">
+<div class="inner">
+
+</div><!-- /inner -->
+</div><!-- /mv -->
+
+
+<main class="content">
+
+	<div class="inner">
+
+		<div class="carousel">
+			<div class="carousel__item carousel__item--visible">
+				<img src="img/slide1.jpg" alt="">
+				<p class="carousel__caption">海</p>
+			</div>
+			<div class="carousel__item">
+				<img src="img/slide2.jpg" alt="">
+				<p class="carousel__caption">サンセット</p>
+			</div>
+			<div class="carousel__item">
+				<img src="img/slide3.jpg" alt="">
+				<p class="carousel__caption">草花</p>
+			</div>
+
+			<div class="carousel__actions">
+				<button id="carousel__button--prev" aria-label="Previous slide"><</button>
+				<button id="carousel__button--next" aria-label="Next slide">></button>
+			</div>
+		</div>
+
+	</div>
+
+
+</main><!-- /content -->
+
+
+<footer class="footer">
+<div class="inner footer-inner">
+
+<p class="footer-copy">Copyright &copy; 2021 Title</p><!-- /copy -->
+
+</div><!-- /inner -->
+</footer><!-- /footer -->
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="./js/script.js"></script>
+<script src="./js/carousel.js"></script>
+</body>
+</html>
+

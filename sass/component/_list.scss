@@ -1,0 +1,28 @@
+
+.list {
+	margin: 24px auto 0;
+	counter-reset: count 0;
+}
+
+.list_item:before {
+	content: counter(count) ". ";
+	counter-increment: count 1;
+	font-size: 24px;
+	color: $cr-b;
+}
+.list_item + .list_item {
+	margin: 16px auto 0;
+}
+.list_item a {
+	font-size: 24px;
+	color: $cr-b;
+	// border: 1px solid #ddd;
+	border-radius: 4px;
+	padding: 4px 8px;
+	text-decoration: underline;
+	&:hover {
+		background-color: lighten($cr-table, 15%);
+		transition: background-color .2s;
+		text-decoration: none;
+	}
+}
